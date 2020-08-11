@@ -1,10 +1,11 @@
 const getItemsString = function (array) {
-  "use strict";
   // Write code under this line
-  for (const friend of friends) {
-    let string = "";
+  let result = "";
+
+  for (let i = 0; i < array.lenght; i += 1) {
+    result += `${i + 1}-${array[i]} \n`;
   }
-  return string;
+  return result;
 };
 
 console.log(getItemsString(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]));
@@ -18,7 +19,7 @@ console.log(getItemsString(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]));
 '
 */
 
-//console.log(getItemsString([5, 10, 15]));
+console.log(getItemsString([5, 10, 15]));
 /*
 '1 - 5
 2 - 10
